@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chatactivity">
+<Toolbar
+    android:id="@+id/tool_bar"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/light_blue"
+
+  >
+
+
+</Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatrecycle"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_above="@+id/linerlay"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="-3dp"
+        android:background="@color/white"
+         android:layout_below="@+id/tool_bar"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/linerlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="180"
+        android:paddingLeft="10dp"
+        >
+
+
+        <EditText
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:hint="type a message"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="180"
+            android:background="@drawable/back"
+            ></EditText>
+
+
+        <ImageView
+            android:id="@+id/imagee_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/baseline_forward_24"
+            android:layout_weight="50"
+            ></ImageView>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/back_btn"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:background="@drawable/back_b" />
+
+</RelativeLayout>

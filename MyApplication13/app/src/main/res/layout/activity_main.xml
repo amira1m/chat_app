@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:clickable="true"
+    android:focusable="true">
+
+<Button
+    android:id="@+id/back"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:background="@drawable/baseline_arrow_back_ios_new_24"
+    ></Button>
+
+
+    <ImageView
+        android:id="@+id/chat"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/chat"></ImageView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/name_ed"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/chat"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/back"
+        android:hint="Name"
+        app:counterEnabled="true"
+        app:startIconDrawable="@drawable/baseline_person_24"
+        app:endIconCheckable="true"
+        app:endIconMode="clear_text">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/log_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="20"
+            android:inputType="text"></com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/email_ed"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/name_ed"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/back"
+        android:hint="Email"
+        app:startIconDrawable="@drawable/email"
+        app:endIconMode="clear_text">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/log_email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="20"
+            android:inputType="textEmailAddress">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password_ed"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/email_ed"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/back"
+        app:passwordToggleEnabled="true"
+        app:counterMaxLength="15"
+        android:hint="Password"
+        android:clickable="true"
+        app:startIconDrawable="@drawable/passworddddd"
+        android:focusable="true">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/log_pass"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="textPassword"
+            android:ems="15">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/sign_btn2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password_ed"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="sign up"></Button>
+
+</RelativeLayout>
